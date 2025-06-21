@@ -6,10 +6,63 @@
     <Name>MultidimensionalProject101.database</Name>
     <FullPath>MultidimensionalProject101.database</FullPath>
   </Database>
+  <Cubes>
+    <ProjectItem>
+      <Name>ProductSales.cube</Name>
+      <FullPath>ProductSales.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>ProductSales.partitions</Name>
+          <FullPath>ProductSales.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+  </Cubes>
+  <Dimensions>
+    <ProjectItem>
+      <Name>Dim Product.dim</Name>
+      <FullPath>Dim Product.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fact Reseller Sales.dim</Name>
+      <FullPath>Fact Reseller Sales.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fact Internet Sales.dim</Name>
+      <FullPath>Fact Internet Sales.dim</FullPath>
+    </ProjectItem>
+  </Dimensions>
+  <DataSources>
+    <ProjectItem>
+      <Name>Adventure Works DW2022.ds</Name>
+      <FullPath>Adventure Works DW2022.ds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSourceViews>
+    <ProjectItem>
+      <Name>ProductSales.dsv</Name>
+      <FullPath>ProductSales.dsv</FullPath>
+    </ProjectItem>
+  </DataSourceViews>
   <Configurations>
     <Configuration>
       <Name>Development</Name>
-      <Options />
+      <Options>
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>Adventure Works DW2022</Id>
+            <Name>Adventure Works DW2022</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=DELL-INS14;Integrated Security=SSPI;Initial Catalog=AdventureWorksDW2022</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>Adventure Works DW2022</Id>
+            <Name>Adventure Works DW2022</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
+      </Options>
     </Configuration>
   </Configurations>
 </Project>
