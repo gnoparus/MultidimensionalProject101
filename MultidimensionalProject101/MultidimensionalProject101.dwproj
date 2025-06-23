@@ -8,28 +8,36 @@
   </Database>
   <Cubes>
     <ProjectItem>
-      <Name>ProductSales.cube</Name>
-      <FullPath>ProductSales.cube</FullPath>
+      <Name>Adventure Works DW2022.cube</Name>
+      <FullPath>Adventure Works DW2022.cube</FullPath>
       <Dependencies>
         <ProjectItem>
-          <Name>ProductSales.partitions</Name>
-          <FullPath>ProductSales.partitions</FullPath>
+          <Name>Adventure Works DW2022.partitions</Name>
+          <FullPath>Adventure Works DW2022.partitions</FullPath>
         </ProjectItem>
       </Dependencies>
     </ProjectItem>
   </Cubes>
   <Dimensions>
     <ProjectItem>
-      <Name>Dim Product.dim</Name>
-      <FullPath>Dim Product.dim</FullPath>
+      <Name>Customer.dim</Name>
+      <FullPath>Customer.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Fact Reseller Sales.dim</Name>
-      <FullPath>Fact Reseller Sales.dim</FullPath>
+      <Name>Sales Territory.dim</Name>
+      <FullPath>Sales Territory.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Fact Internet Sales.dim</Name>
-      <FullPath>Fact Internet Sales.dim</FullPath>
+      <Name>Product.dim</Name>
+      <FullPath>Product.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Date.dim</Name>
+      <FullPath>Date.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Internet Sales.dim</Name>
+      <FullPath>Internet Sales.dim</FullPath>
     </ProjectItem>
   </Dimensions>
   <DataSources>
@@ -40,8 +48,8 @@
   </DataSources>
   <DataSourceViews>
     <ProjectItem>
-      <Name>ProductSales.dsv</Name>
-      <FullPath>ProductSales.dsv</FullPath>
+      <Name>Adventure Works DW2022.dsv</Name>
+      <FullPath>Adventure Works DW2022.dsv</FullPath>
     </ProjectItem>
   </DataSourceViews>
   <Configurations>
@@ -52,7 +60,7 @@
           <ConfigurationSetting>
             <Id>Adventure Works DW2022</Id>
             <Name>Adventure Works DW2022</Name>
-            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=DELL-INS14;Integrated Security=SSPI;Initial Catalog=AdventureWorksDW2022</Value>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=localhost;Integrated Security=SSPI;Initial Catalog=AdventureWorksDW2022</Value>
           </ConfigurationSetting>
         </ConnectionMappings>
         <ConnectionSecurityMappings>
