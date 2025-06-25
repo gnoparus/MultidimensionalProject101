@@ -30,10 +30,6 @@
   </Cubes>
   <Dimensions>
     <ProjectItem>
-      <Name>Customer.dim</Name>
-      <FullPath>Customer.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>Sales Territory.dim</Name>
       <FullPath>Sales Territory.dim</FullPath>
     </ProjectItem>
@@ -68,6 +64,10 @@
     <ProjectItem>
       <Name>Reseller Sales.dim</Name>
       <FullPath>Reseller Sales.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Customer.dim</Name>
+      <FullPath>Customer.dim</FullPath>
     </ProjectItem>
   </Dimensions>
   <DataSources>
